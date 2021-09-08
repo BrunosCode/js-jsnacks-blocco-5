@@ -11,21 +11,28 @@ class Courgette {
         this.weight = weight;
         this.length = length
     }
+    courgetteData() {
+        return `This courgette is a ${this.variety}, it is ${this.weight}g and ${this.length}cm`;
+    }
 }
 
 const getRndNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+// add random courgette
 for( let i = 0; i < 10; i++){
     courgettes.push(new Courgette(getRndNumber(1,5), getRndNumber(70,300), getRndNumber(10,80)));
 }
 
-console.log(courgettes);
-
-let weightSum = 0;
-for( let courgette of courgettes){
-    weightSum += courgette.weight;
+// print all the courgette
+for(let i = 0; i < courgette.length; i++){
+    console.log(`${i+1} ${courgette.courgetteData()}`)
 }
 
-console.log(weightSum);
+// sum of all courgette weights
+let weightsSum = 0;
+for( let courgette of courgettes){
+    weightsSum += courgette.weight;
+}
+console.log("the sum of courgette weights is" + weightsSum);
