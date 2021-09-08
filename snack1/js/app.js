@@ -26,8 +26,8 @@ for( let i = 0; i < 10; i++){
 }
 
 // print all the courgette
-for(let i = 0; i < courgette.length; i++){
-    console.log(`${i+1} ${courgette.courgetteData()}`)
+for(let i = 0; i < courgettes.length; i++){
+    console.log(`${i+1} ${courgettes[i].courgetteData()}`)
 }
 
 // sum of all courgette weights
