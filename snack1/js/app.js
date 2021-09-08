@@ -6,10 +6,10 @@
 let courgettes = [];
 
 class Courgette {
-    constructor(variety, weight, length) {
+    constructor(variety, weight, mineLength) {
         this.variety = variety;
         this.weight = weight;
-        this.length = length
+        this.mineLength = mineLength
     }
     presentation() {
         return `This courgette is a ${this.variety}, it is ${this.weight}g and ${this.length}cm`;
