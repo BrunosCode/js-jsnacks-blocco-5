@@ -11,7 +11,7 @@ class Courgette {
         this.weight = weight;
         this.length = length
     }
-    courgetteData() {
+    presentation() {
         return `This courgette is a ${this.variety}, it is ${this.weight}g and ${this.length}cm`;
     }
 }
@@ -27,7 +27,7 @@ for( let i = 0; i < 10; i++){
 
 // print all the courgette
 for(let i = 0; i < courgettes.length; i++){
-    console.log(`${i+1} ${courgettes[i].courgetteData()}`)
+    console.log(`${i+1}. ${courgettes[i].presentation()}`)
 }
 
 // sum of all courgette weights
@@ -35,4 +35,4 @@ let weightsSum = 0;
 for( let courgette of courgettes){
     weightsSum += courgette.weight;
 }
-console.log("the sum of courgette weights is" + weightsSum);
+console.log(`the sum of courgette weights is ${weightsSum}g`);
